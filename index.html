@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<div class="conteiner-fluid">
+	<div class="row">
+		<form method="POST" action="javascript:void(null);" onsubmit="call()" id="contactForm" class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+			<div class="panel-heading">
+				<h2 class="text-center">Sign Up</h2>
+			</div>
+			<div class="row">
+				<div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<span class="input-group-addon glyphicon glyphicon-user"></span>
+					<input type="text" class="form-control" placeholder="Name" name="name">
+				</div>
+				<div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<span class="input-group-addon glyphicon glyphicon-user"></span>
+					<input type="text" class="form-control" placeholder="Surname" name="secondname">
+				</div>
+				<div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<span class="input-group-addon glyphicon glyphicon-envelope"></span>
+					<input type="email" class="form-control"  placeholder="Email" name="email">
+				</div>
+				<select class="form-group form-control col-lg-12 col-md-12 col-sm-12 col-xs-12" name="gender">
+					<option>male</option>
+					<option>female</option>
+				</select>
+				<div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+					<input type="password" class="form-control" placeholder="Password" name="pass">
+				</div>
+				<div class="form-group checkbox">
+					<label>
+						<input type="checkbox" value="" name="checkbox">
+						Conditions of Agreement
+					</label>
+				</div>
+				<div class="form-group pull-right">
+					<button type="button" class="btn btn-default" id="btn_sub" >Войти</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.min.js"></script>
+	<script src="dist/app.js"></script>
+</body>
+</html>
